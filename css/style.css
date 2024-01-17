@@ -350,9 +350,13 @@ header #navEnvios ul li {
     text-align: center;
     margin-bottom: 5%;
 }
+.mediodepago {
+    display: flex;
+    justify-content: center;
+}
 .mediodepago img {
-    width: 100%;
-    height: 50%;
+    width: 100vh;
+    height: 50;
     margin-bottom: 5%;
 }
 #bannerclothes {
@@ -366,7 +370,7 @@ header #navEnvios ul li {
     border: #C4C8D3;
     border-radius: 100px;
     padding: 50px;
-    width: 300px;
+    width: 500px;
     height: auto;
 }
 
@@ -386,12 +390,11 @@ header #navEnvios ul li {
 }
 /*/////////////////////////////////////FOOTERS////////////////////////////////////////////////*/
 #footer {
-    padding: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: black;
+    text-decoration-color: black;
     width: 100%;
     height: 238px;
     background-color: #7E7D82;
@@ -439,7 +442,7 @@ header #navEnvios ul li {
 }
 .footerindex {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items:  center;
 }
 .footerindex img {
@@ -513,14 +516,15 @@ header #navEnvios ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 #grillasindex {
     background-color: #C4C8D3;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25% 
+    grid-template-columns: 33% 33% 33%
 }
 #grillasindex  img {
-    margin: 50px;
+    margin: 100px;
     height: 300px;
     width: auto;
     border-radius: 30px;
@@ -534,28 +538,23 @@ body {
 }
 
 
-@media (min-width: 601px) {
-    /* Estilos específicos para pantallas grandes aquí */
-}
 
-@media (max-width: 600px) {
+
+@media (max-width: 430px) {
     /* Header */
     header #nav ul {
         flex-direction: column;
         align-items: center;
     }
 
-    header #nav ul li {
-        margin-bottom: 10px;
-    }
-
     .CasaInicio, .CarritoInicio, .StoreInicio, .GrupoInicio, .EnviosInicio {
         position: relative;
-        width: auto;
-        height: 40px;
+        width: 48px; /* Ajusta el ancho según tus necesidades */
+        height: 48px; /* Ajusta la altura según tus necesidades */
         left: auto;
         top: auto;
         margin-bottom: 10px;
+        margin-top: 10px;
     }
 
     /* Main */
@@ -570,18 +569,18 @@ body {
     }
 
     #bannerclothes img {
-        padding: 20px;
+        padding: 10px; /* Ajusta el relleno según tus necesidades */
         width: 100%;
     }
 
+    .grillasdelindex {
+        width: 100%; /* Ajusta el ancho según tus necesidades */
+        height: auto;
+        margin: 10px; /* Ajusta el margen según tus necesidades */
+    }
     #grillasindex img {
-        grid-template-areas:
-        "hijogrillasindex1 hijogrillasindex2"
-        "hijogrillasindex3 hijogrillasindex4";
-        margin: 20px;
         height: auto;
         width: 100%;
-        border-radius: 15px;
     }
 
     /* Footer */
