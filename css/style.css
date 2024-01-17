@@ -514,14 +514,88 @@ header #navEnvios ul li {
     flex-direction: column;
     align-items: center;
 }
-.grillasindex {
+#grillasindex {
     background-color: #C4C8D3;
     display: grid;
     grid-template-columns: 25% 25% 25% 25% 
 }
-.grillasindex  img {
+#grillasindex  img {
     margin: 50px;
     height: 300px;
     width: auto;
     border-radius: 30px;
+}
+
+
+
+
+body {
+    background-color: #C4C8D3;
+}
+
+
+@media (min-width: 601px) {
+    /* Estilos específicos para pantallas grandes aquí */
+}
+
+@media (max-width: 600px) {
+    /* Header */
+    header #nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header #nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .CasaInicio, .CarritoInicio, .StoreInicio, .GrupoInicio, .EnviosInicio {
+        position: relative;
+        width: auto;
+        height: 40px;
+        left: auto;
+        top: auto;
+        margin-bottom: 10px;
+    }
+
+    /* Main */
+    #main h1 {
+        margin-top: 10px;
+        margin-bottom: 3%;
+    }
+
+    .mediodepago img {
+        height: auto;
+        margin-bottom: 3%;
+    }
+
+    #bannerclothes img {
+        padding: 20px;
+        width: 100%;
+    }
+
+    #grillasindex img {
+        grid-template-areas:
+        "hijogrillasindex1 hijogrillasindex2"
+        "hijogrillasindex3 hijogrillasindex4";
+        margin: 20px;
+        height: auto;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    /* Footer */
+    #footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Copyright {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .footerindex img {
+        margin: 5px;
+    }
 }
