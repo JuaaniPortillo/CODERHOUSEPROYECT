@@ -314,21 +314,50 @@ header #navEnvios ul li {
 }
 /*BODY/MAIN*/
 
-#body {
-    max-width: 100%;
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/8334389ef71d39393fa4629b074feec1.jpg);
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1; /* Asegura que el fondo esté detrás del contenido */
 }
+
+/* El resto de tus estilos para body se mantienen igual */
+body {
+    max-width: 100%;
+    background-image: url(../images/8334389ef71d39393fa4629b074feec1.jpg);
+}
+
 
 #bodycatalogo {
     max-width: 100%;
+    background-image: url(../images/8334389ef71d39393fa4629b074feec1.jpg);
 }
+
 #bodyStore {
     max-width: 100%;
+    background-image: url(../images/8334389ef71d39393fa4629b074feec1.jpg);
 }
+
 #bodyNosotros {
     max-width: 100%;
+    background-image: url(../images/8334389ef71d39393fa4629b074feec1.jpg);
 }
+
 #bodyEnvios {
     max-width: 100%;
+    background-image: url(../images/8334389ef71d39393fa4629b074feec1.jpg);
+}
+
+
+.indexprincipal {
+    background-color: #C4C8D3;
 }
 
 .mainStore {
@@ -350,6 +379,20 @@ header #navEnvios ul li {
     justify-content: flex-end;
 }
 
+.NosotrosTexto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 #main {
     width: 100%;
     min-height: 100vh;
@@ -526,9 +569,8 @@ header #navEnvios ul li {
 
 }
 #grillasindex {
-    background-color: #C4C8D3;
     display: grid;
-    grid-template-columns: 33% 33% 33%
+    grid-template-columns: 33% 33% 33%;
 }
 #grillasindex  img {
     margin: 100px;
