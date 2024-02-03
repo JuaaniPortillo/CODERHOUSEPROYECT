@@ -312,24 +312,11 @@ header #navEnvios ul li {
     
     background: url(transporte.png);
 }
+
 /*BODY/MAIN*/
 
 
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/8334389ef71d39393fa4629b074feec1.jpg);
-    background-size: cover;
-    opacity: 0.8;
-    z-index: -1; /* Asegura que el fondo esté detrás del contenido */
-}
-
-/* El resto de tus estilos para body se mantienen igual */
-body {
+#body {
     max-width: 100%;
     background-image: url(../images/8334389ef71d39393fa4629b074feec1.jpg);
 }
@@ -357,8 +344,22 @@ body {
 
 
 .indexprincipal {
-    background-color: #C4C8D3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(168, 167, 167, 0.959);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 900px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
 
 .mainStore {
     display: flex;
@@ -369,6 +370,8 @@ body {
 }
 .Storeh1 {
     display: flex;
+    background-color: rgba(255, 251, 0, 0.63);
+    border-radius: 10px;
     font-size: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 5%;
@@ -379,16 +382,37 @@ body {
     justify-content: flex-end;
 }
 
-.NosotrosTexto {
+.Horariosdeatención {
+    font-size: 30px;
+    background-color: rgba(255, 251, 0, 0.8);
+    border-radius: 10px;
+    text-align: center;
+    height: 125px;
+    width: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#NosotrosMain {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#NosotrosMain img {
+    width: 1440px;
+    height: auto;
+}
+.NosotrosTexto {
+
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
+    color: rgb(255, 255, 255);
     margin: 20px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(80, 77, 77, 0.726);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -396,10 +420,15 @@ body {
 #main {
     width: 100%;
     min-height: 100vh;
-    height: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; 
 }
 
 #main h1 {
+    display: flex;
     margin-top: 20px;
     justify-content: center;
     text-align: center;
@@ -413,6 +442,7 @@ body {
 .mediodepago img {
     width: 100vh;
     height: auto;
+    margin-top: 10%;
     margin-bottom: 5%;
 }
 #bannerclothes {
@@ -434,6 +464,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(255, 251, 0, 0.7);
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -550,16 +581,19 @@ body {
     justify-content: flex-end;
 }
 .grillascatálogo {
-    background-color: #C4C8D3;
+    background-color: rgba(80, 80, 80, 0.877);
+    border-radius: 20px;
     max-width: min-content;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 5%;
 }
 .grillascatálogo article {
     margin: 10px;
 }
 .grillascatálogo article img {
-    border-radius: 80px;
+    border-radius: 50px;
+    padding: 25px;
 }
 
 .grillasprincipal {
@@ -571,12 +605,18 @@ body {
 #grillasindex {
     display: grid;
     grid-template-columns: 33% 33% 33%;
+    background-color: rgba(82, 77, 77, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5%;
 }
 #grillasindex  img {
     margin: 100px;
     height: 300px;
     width: auto;
     border-radius: 30px;
+    margin: 50px;
 }
 
 
