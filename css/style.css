@@ -318,27 +318,32 @@ header #navEnvios ul li {
 
 #body {
     max-width: 100%;
+    max-height: 100%;
     background-image: url(../images/8334389ef71d39393fa4629b074feec1.jpg);
 }
 
 
 #bodycatalogo {
     max-width: 100%;
+    max-height: 100%;
     background-image: url(../images/8334389ef71d39393fa4629b074feec1.jpg);
 }
 
 #bodyStore {
     max-width: 100%;
+    max-height: 100%;
     background-image: url(../images/8334389ef71d39393fa4629b074feec1.jpg);
 }
 
 #bodyNosotros {
     max-width: 100%;
+    max-height: 100%;
     background-image: url(../images/8334389ef71d39393fa4629b074feec1.jpg);
 }
 
 #bodyEnvios {
     max-width: 100%;
+    max-height: 100%;
     background-image: url(../images/8334389ef71d39393fa4629b074feec1.jpg);
 }
 
@@ -608,6 +613,7 @@ header #navEnvios ul li {
     background-color: rgba(82, 77, 77, 0.7);
     padding: 20px;
     border-radius: 10px;
+    border: 2px solid black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 5%;
 }
@@ -616,6 +622,7 @@ header #navEnvios ul li {
     height: 300px;
     width: auto;
     border-radius: 30px;
+    border: 5px solid black;
     margin: 50px;
 }
 
