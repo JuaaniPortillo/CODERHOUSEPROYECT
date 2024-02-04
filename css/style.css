@@ -624,7 +624,7 @@ li {
     background: url(transporte.png);
   }
   #main #bannerclothes img {
-    max-width: 150px;
+    width: 150px;
     padding: 5px;
   }
 }
