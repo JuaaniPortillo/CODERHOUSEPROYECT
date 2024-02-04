@@ -559,7 +559,7 @@ li {
     width: 100%;
     max-width: 150px;
     height: auto;
-    padding: 0px;
+    padding: 25px;
     margin: 0 auto; /* Añade este margen auto para centrar la imagen horizontalmente */
   }
 }
