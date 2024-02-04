@@ -480,6 +480,154 @@ li {
   list-style: none;
 }
 
+@media (max-width: 430px) {
+  body {
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 14px;
+  }
+  header #nav {
+    background-color: #7E7D82;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7px;
+  }
+  header #nav img {
+    max-height: 100%;
+  }
+  header #nav ul {
+    list-style: none;
+    display: flex;
+  }
+  header #nav ul li a img {
+    width: 30px;
+    height: 30px;
+  }
+  .CasaInicio {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 125px;
+    top: center;
+  }
+  .CarritoInicio {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 180px;
+    top: 26px;
+    background: url(carrito-de-compras.png);
+  }
+  .StoreInicio {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 245px;
+    top: 26px;
+    background: url(store-front.png);
+  }
+  .GrupoInicio {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 300px;
+    top: 26px;
+    background: url(grupo.png);
+  }
+  .EnviosInicio {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 30px;
+    top: 26px;
+    background: url(transporte.png);
+  }
+  #bannerclothes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  #bannerclothes img {
+    border: #C4C8D3;
+    border-radius: 100px;
+    padding: px;
+    width: 150px;
+    height: auto;
+  }
+}
+@media (max-width: 930px) {
+  body {
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 14px;
+  }
+  header #nav {
+    background-color: #7E7D82;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+  header #nav img {
+    max-height: 100%;
+  }
+  header #nav ul {
+    list-style: none;
+    display: flex;
+  }
+  header #nav ul li {
+    margin-right: 20px;
+  }
+  header #nav ul li a img {
+    width: 30px;
+    height: 30px;
+  }
+  .CasaInicio {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 125px;
+    top: center;
+  }
+  .CarritoInicio {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 180px;
+    top: 26px;
+    background: url(carrito-de-compras.png);
+  }
+  .StoreInicio {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 245px;
+    top: 26px;
+    background: url(store-front.png);
+  }
+  .GrupoInicio {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 300px;
+    top: 26px;
+    background: url(grupo.png);
+  }
+  .EnviosInicio {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 400px;
+    top: 26px;
+    background: url(transporte.png);
+  }
+  #main #bannerclothes img {
+    max-width: 150px;
+    padding: 5px;
+  }
+}
 /*imports de los mains*/
 #main {
   width: 100%;
