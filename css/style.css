@@ -480,7 +480,7 @@ li {
   list-style: none;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 431px) {
   body {
     max-width: 100%;
     max-height: 100%;
@@ -550,25 +550,21 @@ li {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    text-align: center; /* Alinea el texto al centro */
-    height: 400px; /* Añade esta línea para que el contenedor ocupe toda la altura de la pantalla */
+    text-align: center;
+    height: auto;
   }
   #main #bannerclothes img {
     border: #C4C8D3;
     border-radius: 50px;
     width: 100%;
-    max-width: 150px;
-    height: auto;
+    max-width: 250px;
+    height: 391px;
     padding: 25px;
-    margin: 0 auto; /* Añade este margen auto para centrar la imagen horizontalmente */
+    box-sizing: border-box;
+    margin: 0;
   }
 }
 @media (max-width: 930px) {
-  body {
-    max-width: 100%;
-    max-height: 100%;
-    font-size: 14px;
-  }
   header #nav {
     background-color: #7E7D82;
     display: flex;
@@ -641,6 +637,24 @@ li {
     width: 150px;
     padding: 25px;
   }
+  body {
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 14px;
+  }
+  #main #bannerclothes img {
+    border: #C4C8D3;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 5%;
+  }
+  #main #bannerclothes img:nth-child(2) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /*imports de los mains*/
 #main {
@@ -667,9 +681,9 @@ li {
 #main #bannerclothes img {
   border: #C4C8D3;
   border-radius: 100px;
-  padding: 50px;
   width: 350px;
   height: auto;
+  margin: 40px;
 }
 #main .indexprincipal {
   display: flex;
