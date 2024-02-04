@@ -491,61 +491,55 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 7px;
-  }
-  header #nav img {
-    max-height: 100%;
+    height: 60px;
   }
   header #nav ul {
     list-style: none;
     display: flex;
   }
+  header #nav ul li {
+    margin-right: 20px;
+  }
   header #nav ul li a img {
     width: 30px;
     height: 30px;
   }
-  .CasaInicio {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    left: 125px;
-    top: center;
-  }
-  .CarritoInicio {
+  .CasaInicio,
+  .CarritoInicio,
+  .StoreInicio,
+  .GrupoInicio,
+  .EnviosInicio {
     position: absolute;
     width: 30px;
     height: 30px;
+  }
+  .CasaInicio {
+    left: 125px;
+    top: center; /* Asegúrate de definir una posición vertical válida */
+  }
+  .CarritoInicio {
     left: 180px;
     top: 26px;
     background: url(carrito-de-compras.png);
   }
   .StoreInicio {
-    position: absolute;
-    width: 30px;
-    height: 30px;
     left: 245px;
     top: 26px;
     background: url(store-front.png);
   }
   .GrupoInicio {
-    position: absolute;
-    width: 30px;
-    height: 30px;
     left: 300px;
     top: 26px;
     background: url(grupo.png);
   }
   .EnviosInicio {
-    position: absolute;
-    width: 30px;
-    height: 30px;
     left: 30px;
     top: 26px;
     background: url(transporte.png);
   }
   #main {
     width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -556,13 +550,17 @@ li {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-align: center; /* Alinea el texto al centro */
+    height: 400px; /* Añade esta línea para que el contenedor ocupe toda la altura de la pantalla */
   }
   #main #bannerclothes img {
     border: #C4C8D3;
     border-radius: 50px;
-    width: 150px;
-    padding: 25px;
+    width: 100%;
+    max-width: 150px;
     height: auto;
+    padding: 0px;
+    margin: 0 auto; /* Añade este margen auto para centrar la imagen horizontalmente */
   }
 }
 @media (max-width: 930px) {
@@ -633,7 +631,7 @@ li {
   }
   #main {
     width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -652,7 +650,6 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
 }
 #main h1 {
   display: flex;
