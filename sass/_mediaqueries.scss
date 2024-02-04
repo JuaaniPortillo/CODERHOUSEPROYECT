@@ -1,11 +1,9 @@
+@media (max-width: 930px) {
 
-@media (max-width: 431px) {
     body {
         max-width: 100%;
         max-height: 100%;
-        font-size: 14px;
     }
-
     header #nav {
         background-color: #7E7D82;
         display: flex;
@@ -13,16 +11,16 @@
         align-items: center;
         height: 60px;
     }
-
+    
+    header #nav img {
+        max-height: 100%; 
+    }
+    
     header #nav ul {
         list-style: none;
         display: flex;
     }
-
-    header #nav ul li {
-        margin-right: 20px;
-    }
-
+    
     header #nav ul li a img {
         width: 30px;
         height: 30px;
@@ -39,35 +37,232 @@
     }
 
     .CasaInicio {
-        left: 125px;
-        top: center; /* Asegúrate de definir una posición vertical válida */
+        left: 100px;
+        top: 15px; /* Asegúrate de definir una posición vertical válida */
     }
 
     .CarritoInicio {
-        left: 180px;
-        top: 26px;
+        left: 160px;
+        top: 15px;
         background: url(carrito-de-compras.png);
     }
 
     .StoreInicio {
-        left: 245px;
-        top: 26px;
+        left: 225px;
+        top: 15px;
         background: url(store-front.png);
     }
 
     .GrupoInicio {
-        left: 300px;
-        top: 26px;
+        left: 290px;
+        top: 15px;
         background: url(grupo.png);
     }
 
     .EnviosInicio {
-        left: 30px;
-        top: 26px;
+        left: 350px;
+        top: 15px;
         background: url(transporte.png);
     }
 
-    #main {
+    #bodycatalogo {
+        max-width: 100%;
+        min-height: 100%;
+    }
+
+    header .navcatalogo {
+        background-color: #7E7D82;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+    }
+    
+    header .navcatalogo img {
+        max-height: 100%; 
+    }
+    
+    header .navcatalogo ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    header .navcatalogo ul li a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .imgCasacatalogo,
+    .imgCarrocatalogo,
+    .imgStorecatalogo,
+    .imgGrupocatalogo,
+    .imgEnvioscatalogo {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+    }
+
+    .imgCasaCatalogo {
+        left: 100px;
+        top: 15px; 
+    }
+
+    .imgCarroCatalogo {
+        left: 160px;
+        top: 15px;
+        background: url(carrito-de-compras.png);
+    }
+
+    .imgStoreCatalogo {
+        left: 225px;
+        top: 15px;
+        background: url(store-front.png);
+    }
+
+    .imgGrupoCatalogo{
+        left: 290px;
+        top: 15px;
+        background: url(grupo.png);
+    }
+
+    .imgEnvioCatalogo {
+        left: 350px;
+        top: 15px;
+        background: url(transporte.png);
+    }
+
+    #bodyStore {
+        max-width: 100%;
+        min-height: 100%;
+    }
+
+    header #navstore {
+        background-color: #7E7D82;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+    }
+    
+    header #navstore img {
+        max-height: 100%; 
+    }
+    
+    header #navstore ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    header #navstore ul li a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .CasaStore,
+    .CarritoStore,
+    .StoreStore,
+    .GrupoStore,
+    .EnviosStore {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+    }
+
+    .CasaStore {
+        left: 100px;
+        top: 15px; 
+    }
+
+    .CarritoStore {
+        left: 160px;
+        top: 15px;
+        background: url(carrito-de-compras.png);
+    }
+
+    .StoreStore {
+        left: 225px;
+        top: 15px;
+        background: url(store-front.png);
+    }
+
+    .GrupoStore{
+        left: 290px;
+        top: 15px;
+        background: url(grupo.png);
+    }
+
+    .EnviosStore {
+        left: 350px;
+        top: 15px;
+        background: url(transporte.png);
+    }
+
+    #bodyNosotros {
+        max-width: 100%;
+        min-height: 100%;
+    }
+
+    header .NavNosotros {
+        background-color: #7E7D82;
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+    }
+    
+    header .NavNosotros{
+        max-height: 100%; 
+    }
+    
+    header .NavNosotros ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    header .NavNosotros li a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .CasaNosotros,
+    .CarroNosotros,
+    .StoreNosotros,
+    .GrupoNosotros,
+    .EnviosNosotros {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+    }
+
+    .CasaNosotros {
+        left: 100px;
+        top: 15px; 
+    }
+
+    .CarroNosotros {
+        left: 160px;
+        top: 15px;
+        background: url(carrito-de-compras.png);
+    }
+
+    .StoreNosotros {
+        left: 225px;
+        top: 15px;
+        background: url(store-front.png);
+    }
+
+    .GrupoNosotros{
+        left: 290px;
+        top: 15px;
+        background: url(grupo.png);
+    }
+
+    .EnviosNosotros {
+        left: 350px;
+        top: 15px;
+        background: url(transporte.png);
+    }
+
+#main {
         width: 100%;
         min-height: 100%;
         height: 100%;
@@ -82,112 +277,6 @@
         align-items: center;
         justify-content: center;
         text-align: center; 
-        height: auto;
-        
-    }
-    
-    #main #bannerclothes img {
-        border: #C4C8D3;
-        border-radius: 50px;
-        width: 100%;
-        max-width: 250px;
-        height: 391px;
-        padding: 25px;
-        box-sizing: border-box;
-        margin: 0;
-    }
-    
-}
-@media (max-width: 930px) {
-
-    header #nav {
-        background-color: #7E7D82;
-        display: flex;
-        justify-content: space-between; 
-        align-items: center;
-        height: 60px;
-    }
-    
-    header #nav img {
-        max-height: 100%;
-    }
-    
-    header #nav ul {
-        list-style: none;
-        display: flex;
-    }
-    
-    header #nav ul li {
-        margin-right: 20px;
-    }
-    
-    header #nav ul li a img {
-        width: 30px;
-        height: 30px;
-    }
-    .CasaInicio {
-        position: absolute;
-    width: 24px;
-    height: 24px;
-    left: 125px;
-    top: center;
-    }
-
-    .CarritoInicio {
-        position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 180px;
-    top: 26px;
-    
-    background: url(carrito-de-compras.png);
-    }
-    
-    .StoreInicio {
-        position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 245px;
-    top: 26px;
-    
-    background: url(store-front.png);
-    }
-
-    .GrupoInicio {
-        position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 300px;
-    top: 26px;
-    
-    background: url(grupo.png);
-    }
-    .EnviosInicio {
-        position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 400px;
-    top: 26px;
-    
-    background: url(transporte.png);
-    }
-    #main {
-        width: 100%;
-        min-height: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;}
-
-    #main #bannerclothes img{
-        width: 150px;
-        padding: 25px;
-    }
-
-    body {
-        max-width: 100%;
-        max-height: 100%;
-        font-size: 14px;
     }
     
     #main #bannerclothes img {
@@ -195,14 +284,36 @@
         border-radius: 50px;
         width: 100%;
         max-width: 150px;
-        height: auto;
-        box-sizing: border-box;
-        padding: 5%;
+        max-height: 282.08px;
+        padding: 5px;
+        margin: 0;
     }
-    
-    #main #bannerclothes img:nth-child(2) {
-        margin-left: auto;
-        margin-right: auto;
+
+    @media (max-width: 430px) {
+        body {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        header #nav {
+            background-color: #7E7D82;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+        }
+
+        header #nav img {
+            max-height: 100%; 
+        }
+
+        header #nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header #nav ul li a img {
+            width: 30px;
+            height: 30px;
+        }
     }
 }
-
